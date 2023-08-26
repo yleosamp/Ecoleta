@@ -1,16 +1,156 @@
-* {
-  font-family: 'Roboto', sans-serif;
+/* GLOBAL STYLES */
+:root {
+  --title-color: #322153;
+  --textos: #6C6C80;
+  --green-button: #34CB79;
 }
 
-header {
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F0F0F5;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--title-color);
+}
+
+p {
+  color: var(--textos);
+}
+
+/* PAGE-HOME STYLES */
+
+#page-home {
+  height: 100vh;
+  background: url('assets/home-background.svg') no-repeat;
+  background-position: 40.55vw bottom;
+}
+
+#page-home .content {
+  width: 90%;
+  height: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#page-home header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 2.87rem;
 }
 
-.content {
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
+#page-home header a {
+  display: flex;
+  color: var(--title-color);
+  font-weight: 700;
+}
+
+#page-home header a span {
+  background: url('assets/log-in.svg') no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+#page-home main {
+  max-width: 560px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#page-home main h1 {
+  font-size: 3.375rem;
+  line-height: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+#page-home main p {
+  font-size: 1.5rem;
+  line-height: 2.375rem;
+  margin-bottom: 2.5rem;
+}
+
+#page-home main a {
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
   
+  width: 21.75rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+
+  border-radius: 0.5rem;
+  border: none;
+  background-color: var(--green-button);
+  transition: 400ms;
+
+  cursor: pointer;
+}
+
+#page-home main a .icon {
+  width: 4.5rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+
+  margin-right: 2.5rem;
+
+  background-color: #2FB86E;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+#page-home main a .icon::after {
+  content: "";
+  background: url('assets/search.svg') no-repeat;
+  
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#page-home main a:hover {
+  background-color: #2FB86E;
+}
+
+@media(max-width: 900px) {
+  #page-home {
+    background-position-x: 70vw;
+  }
+
+  #page-home .content {
+    align-items: center;
+    text-align: center;
+  }
+
+  #page-home header .cadastrar{
+    position: absolute;
+    bottom: 48px;
+
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #page-home main {
+    align-items: center;
+  }
 }
