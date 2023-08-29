@@ -1,38 +1,8 @@
-/* GLOBAL STYLES */
-:root {
-  --title-color: #322153;
-  --textos: #6C6C80;
-  --green-button: #34CB79;
-}
-
-* {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: #F0F0F5;
-}
-
-a {
-  text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Ubuntu', sans-serif;
-  color: var(--title-color);
-}
-
-p {
-  color: var(--textos);
-}
-
 /* PAGE-HOME STYLES */
 
 #page-home {
   height: 100vh;
-  background: url('assets/home-background.svg') no-repeat;
+  background: url('../assets/home-background.svg') no-repeat;
   background-position: 40.55vw bottom;
 }
 
@@ -60,7 +30,7 @@ p {
 }
 
 #page-home header a span {
-  background: url('assets/log-in.svg') no-repeat;
+  background: url('../assets/log-in.svg') no-repeat;
   width: 1.5rem;
   height: 1.5rem;
   margin-right: 1rem;
@@ -122,7 +92,7 @@ p {
 
 #page-home main a .icon::after {
   content: "";
-  background: url('assets/search.svg') no-repeat;
+  background: url('../assets/search.svg') no-repeat;
   
   width: 1.5rem;
   height: 1.5rem;
@@ -132,25 +102,3 @@ p {
   background-color: #2FB86E;
 }
 
-@media(max-width: 900px) {
-  #page-home {
-    background-position-x: 70vw;
-  }
-
-  #page-home .content {
-    align-items: center;
-    text-align: center;
-  }
-
-  #page-home header .cadastrar{
-    position: absolute;
-    bottom: 48px;
-
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  #page-home main {
-    align-items: center;
-  }
-}

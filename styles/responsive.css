@@ -1,0 +1,43 @@
+/* RESPONSIVIDADE */
+
+@media(max-width: 900px) {
+  #page-home {
+    background-position-x: 70vw;
+  }
+
+  #page-home .content {
+    align-items: center;
+    text-align: center;
+  }
+
+  #page-home header .cadastrar{
+    position: absolute;
+    bottom: 48px;
+
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #page-home main {
+    align-items: center;
+  }
+}
+
+@media (min-height: 1500px) {
+  #page-home {
+    background-position-y: 20.5vw;
+  }
+}
+
+@media (min-width: 1700px) {
+  #page-home {
+    background-position-x: 43.5vw;
+  }
+}
+
+
+@media (max-height: 740px) {
+  #page-home {
+    background-position-y: 8.5vw;
+  }
+}
