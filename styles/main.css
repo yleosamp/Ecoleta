@@ -2,10 +2,13 @@
 :root {
   --title-color: #322153;
   --textos: #6C6C80;
+
   --green-button: #34CB79;
   --hover-button: #2FB86E;
 
   --background: #F0F0F5;
+  --grid-background: #F5F5F5;
+  --grid-background-selected: #E1FAEC;
 }
 
 * {

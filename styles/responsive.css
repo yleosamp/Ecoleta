@@ -21,6 +21,22 @@
   #page-home main {
     align-items: center;
   }
+
+  #page-search-results .cards {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+  }
+
+  #page-search-results img {
+    width: 100%;
+  }
+
+  body::after {
+    background: var(--background);
+  }
 }
 
 @media (min-height: 1500px) {
@@ -35,9 +51,30 @@
   }
 }
 
-
 @media (max-height: 740px) {
   #page-home {
     background-position-y: 8.5vw;
+  }
+}
+
+@media (max-width: 500px) {
+  #page-create-point input{
+    width: 100%;
+  }
+
+  #page-create-point .field-group {
+    display: block;
+  }
+
+  #page-create-point .items-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #page-create-point .items-grid li {
+    width: 170px;
+  }
+
+  #page-create-point button {
+    width: 100%;
   }
 }
