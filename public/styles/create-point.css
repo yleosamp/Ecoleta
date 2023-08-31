@@ -56,6 +56,10 @@ form fieldset {
 
 form legend {
   margin-bottom: 1.09rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 13.94rem;
 }
 
 form legend h2 {
@@ -173,4 +177,13 @@ form button:hover {
 .items-grid li img, 
 .items-grid li span {
   pointer-events: none;
+}
+
+#selectText {
+  color: var(--textos);
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

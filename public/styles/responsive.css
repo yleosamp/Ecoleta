@@ -57,7 +57,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   #page-create-point input{
     width: 100%;
   }
@@ -76,5 +76,13 @@
 
   #page-create-point button {
     width: 100%;
+  }
+
+  #selectText {
+    font-size: 0.01px;
+  }
+
+  #page-create-point legend {
+    display: block;
   }
 }

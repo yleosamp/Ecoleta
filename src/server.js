@@ -25,7 +25,7 @@ server.get("/create-point", function(req, res){
 })
 
 server.get("/search", function(req, res){
-  return res.render("create-point.html") // render irá enviar um arquivo
+  return res.render("search.html") // render irá enviar um arquivo
 })
 
 // Ligar o servidor
