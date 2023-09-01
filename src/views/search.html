@@ -14,34 +14,29 @@
     {% block content %}
       {% include "../views/partials/page-header.html" %}
       <main>
-        <h4>
-          <strong>2 pontos</strong> encontrados
-        </h4>
+        {% if total > 0 %}
+          <h4>
+            <strong>{{ total }} pontos</strong> encontrados
+          </h4>
 
-        <div class="cards">
-          <div class="card">
-            <img src="https://wvdn.com/wp-content/uploads/2022/12/AdobeStock-RecycleLady_237199352-3-scaled.jpeg" alt="Colectoria">
-            <h1>Colectoria</h1>
-            <h3>Resíduos Eletrôniocos, Lâmpadas</h3>
-            <p>
-              Rio do Sul, Santa Catarina <br>
-              Guilherme Gemballa, Jardim América <br>
-              N° 260
-            </p>
+          <div class="cards">
+            {% for place in place %}
+              <div class="card">
+                <img src="{{ place.image }}" alt="{{ place.name }}">
+                <h1>{{ place.name }}</h1>
+                <h3>{{ place.items }}</h3>
+                <p>
+                  {{ place.city }}, {{ place.state }} <br>
+                  {{ place.address }} <br>
+                  {{ place.address2 }}
+                </p>
+              </div>
+            {% endfor %}
           </div>
-    
-          <div class="card">
-            <img src="https://empire-s3-production.bobvila.com/articles/wp-content/uploads/2022/08/iStock-1253713039-Household-Items-You-Can-Get-Paid-to-Recycle.jpg" alt="Papersider">
-            <h1>Papersider</h1>
-            <h3>Papéis e Papelão</h3>
-            <p>
-              Rio do Sul, Santa Catarina <br>
-              Guilherme Gemballa, Jardim América <br>
-              N° 260
-            </p>
-          </div>
-        </div>
-      </main>
+
+        {% else %}
+          <h4><strong>Nenhum</strong> local econtrado</h4>
+        {% endif %}
     {% endblock content %}
 
 </body>

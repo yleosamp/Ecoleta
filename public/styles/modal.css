@@ -87,3 +87,22 @@
 
   cursor: pointer;
 }
+
+/*CADASTRO CONCLUIDO*/
+
+#modal.point .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#modal.point .content h1{
+  color: var(--Background, #F0F0F5);
+  font-family: Roboto;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-top: 1.5rem;
+}
